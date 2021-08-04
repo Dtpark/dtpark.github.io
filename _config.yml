@@ -1,0 +1,12 @@
+baseurl: 
+title: Dtpark's blog
+email: dtpark@ghtt.net
+author: Dtpark
+description: >- # this means to ignore newlines until "baseurl:"
+  磨刀不误砍柴工，读完硕士再打工
+
+paginate: 5
+paginate_path: "/page/:num"
+
+plugins:
+  - jekyll-paginate
