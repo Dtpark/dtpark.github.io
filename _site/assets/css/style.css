@@ -140,7 +140,9 @@ footer a { color: #fff; text-decoration: none; }
 /* Footer, <footer> footer   - container */
 footer { background: rgba(0, 0, 0, 0.1); width: 100%; height: auto; padding: 20px 0; margin: 0; }
 
-/* Font color */
+/* Font */
+p { word-wrap: break-word; }
+
 .fc-conifer { color: #b5e853; }
 
 /*# sourceMappingURL=style.css.map */

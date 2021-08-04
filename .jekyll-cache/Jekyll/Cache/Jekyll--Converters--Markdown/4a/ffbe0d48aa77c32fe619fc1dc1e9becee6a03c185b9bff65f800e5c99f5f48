@@ -1,0 +1,147 @@
+I"�<h2 id="0x01-安装homebrew">0x01 安装HomeBrew</h2>
+<p>HomeBrew是一款Mac OS平台下的软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。简单的一条指令，就可以实现包管理，而不用你关心各种依赖和文件路径的情况，十分方便快捷。</p>
+
+<ul>
+  <li>安装脚本（国内）</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+</code></pre></div></div>
+
+<ul>
+  <li>卸载脚本(国内)</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/HomebrewUninstall.sh)"
+</code></pre></div></div>
+
+<ul>
+  <li>参考资料</li>
+</ul>
+
+<p><a href="https://zhuanlan.zhihu.com/p/111014448">HomeBrew国内如何自动安装（国内地址）</a></p>
+
+<h2 id="0x02-安装golang">0x02 安装Golang</h2>
+
+<h3 id="21-首先看看有哪些golang版本可用">2.1 首先看看有哪些golang版本可用</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0x01@0x001 % brew search go
+Warning: Error searching on GitHub: curl failed!   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to api.github.com port 443: Connection refused
+
+==&gt; Formulae
+algol68g                                 google-benchmark
+anycable-go                              google-java-format
+arangodb                                 google-sparsehash
+argo                                     google-sql-tool
+argocd                                   googler
+argon2                                   googletest
+aws-google-auth                          goolabs
+bogofilter                               goose
+cargo-c                                  gopass
+cargo-instruments                        gor
+certigo                                  goreleaser
+cgoban                                   goreman
+clingo                                   gost
+django-completion                        gostatic
+forego                                   gosu
+fuego                                    gotags
+gateway-go                               goto
+git-hooks-go                             gotop
+gnu-go                                   gource
+go                                       govc
+go-bindata                               govendor
+go-jira                                  gowsdl
+go-jsonnet                               gox
+go-md2man                                gst-plugins-good
+go-statik                                gx-go
+go@1.10                                  hugo
+go@1.11                                  jpegoptim
+go@1.12                                  katago
+go@1.13                                  lego
+go@1.14                                 lgogdownloader
+go@1.9                                 libgosu
+goaccess                                 lunchy-go
+goad                                     mongo-c-driver
+gobby                                    mongo-cxx-driver
+gobject-introspection                    mongo-orchestration
+gobo                                     mongoose
+gobuster                                 pango
+gocloc                                   pangomm
+gocr                                     powerline-go
+gocryptfs                                protoc-gen-go
+godep                                    protoc-gen-go-grpc
+goenv                                    protoc-gen-gogo
+gofabric8                                protoc-gen-gogofaster
+goffice                                  pygobject3
+gofish                                   ringojs
+golang-migrate                           server-go
+golangci-lint                            spaceinvaders-go
+gollum                                   spigot
+golo                                     svgo
+gom                                      tengo
+gomplate                                 wego
+goocanvas                                wireguard-go
+goofys                                   write-good
+google-authenticator-libpam
+</code></pre></div></div>
+
+<p>我们发现最新的有1.14可以使用</p>
+
+<h3 id="22-安装brew下最新版本的go">2.2 安装brew下最新版本的go</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0x01@0x001 % brew install go@1.14
+Updating Homebrew...
+==&gt; Downloading https://homebrew.bintray.com/bottles/go@1.9-1.9.7.high_sierra.bottle.tar.gz
+######################################################################## 100.0%
+==&gt; Pouring go@1.14-1.14.10high_sierra.bottle.tar.gz
+==&gt; Caveats
+A valid GOPATH is required to use the `go get` command.
+If $GOPATH is not specified, $HOME/go will be used by default:
+  https://golang.org/doc/code.html#GOPATH
+
+You may wish to add the GOROOT-based install location to your PATH:
+  export PATH=$PATH:/usr/local/opt/go@1.9/libexec/bin
+
+This formula is keg-only, which means it was not symlinked into /usr/local,
+because this is an alternate version of another formula.
+
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/usr/local/opt/go@1.14/bin:$PATH"' &gt;&gt; ~/.bash_profile
+
+==&gt; Summary
+  /usr/local/Cellar/go@1.14/1.14.10: 7,668 files, 294.2MB
+</code></pre></div></div>
+
+<h3 id="23-配置golang的相关环境变量">2.3 配置golang的相关环境变量</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># MacOS 10.15 前的版本
+0x01@0x001 % echo 'export PATH="/usr/local/opt/go@1.14/bin:$PATH"' &gt;&gt; ~/.bash_profile
+
+# MacOS 10.15
+0x01@0x001 % echo 'export PATH="/usr/local/opt/go@1.14/bin:$PATH"' &gt;&gt; ~/.zshrc
+</code></pre></div></div>
+
+<h3 id="24-让改动生效">2.4 让改动生效</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># MacOS 10.15 前的版本
+0x01@0x001 % source ~/.bashrc
+
+# MacOS 10.15
+0x01@0x001 % source ~/.zshrc
+</code></pre></div></div>
+
+<h3 id="25-测试是否安装成功">2.5 测试是否安装成功</h3>
+
+<p>出现以下内容，则安装成功。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0x01@0x001 % go version
+go version go1.14.10 darwin/amd64
+</code></pre></div></div>
+
+<h2 id="0x03-参考资料">0x03 参考资料</h2>
+
+<p><a href="https://www.jianshu.com/p/79bdd20c46cf">Mac os安装golang开发环境</a></p>
+:ET

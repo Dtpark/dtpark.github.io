@@ -317,7 +317,11 @@ footer {
   margin: 0;
 }
 
-/* Font color */
+/* Font */
+p {
+  word-wrap:break-word;
+}
+
 .fc-conifer {
   color: $conifer;
 }
