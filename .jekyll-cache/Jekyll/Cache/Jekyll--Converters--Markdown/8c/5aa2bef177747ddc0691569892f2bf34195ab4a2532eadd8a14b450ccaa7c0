@@ -1,0 +1,91 @@
+I"L<h2 id="一基本的修饰键">一、基本的修饰键</h2>
+
+<ul>
+  <li>修饰键 <code class="language-plaintext highlighter-rouge">command</code>: 很多win下<code class="language-plaintext highlighter-rouge">ctrl</code>的快捷键组合都能用其实现：
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">command + c</code>: 复制</li>
+      <li><code class="language-plaintext highlighter-rouge">command + v</code>: 粘贴</li>
+      <li><code class="language-plaintext highlighter-rouge">command + a</code>: 全选</li>
+      <li><code class="language-plaintext highlighter-rouge">command + s</code>: 保存</li>
+      <li><code class="language-plaintext highlighter-rouge">command + n</code>: 新建
+  ……</li>
+    </ul>
+  </li>
+  <li>修饰键 <code class="language-plaintext highlighter-rouge">ctrl</code> ：在mac下存在感不强，用于和其他按键组合使用。最常用的功能：
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">ctrl + 鼠标左键</code>: 起到点击鼠标右键的效果</li>
+    </ul>
+  </li>
+  <li>
+    <p>修饰键 <code class="language-plaintext highlighter-rouge">option</code>: 很有灵气，特定用途有奇效，先不讲。</p>
+  </li>
+  <li>修饰键 <code class="language-plaintext highlighter-rouge">shift</code> <code class="language-plaintext highlighter-rouge">tab</code>: 配合其他修饰键使用。</li>
+</ul>
+
+<h2 id="二程序界面有关的快捷键">二、程序界面有关的快捷键</h2>
+
+<ul>
+  <li>
+    <p>新建窗口: <code class="language-plaintext highlighter-rouge">command + n</code></p>
+
+    <blockquote>
+      <p>针对支持多个窗口的程序</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>新建标签页: <code class="language-plaintext highlighter-rouge">command + t</code></p>
+  </li>
+  <li>
+    <p>关闭程序: <code class="language-plaintext highlighter-rouge">command + q</code></p>
+
+    <blockquote>
+      <p>对程序彻底关闭，以qq为例，即直接退出程序；
+  不能关闭访达。</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>关闭窗口: <code class="language-plaintext highlighter-rouge">command + w</code></p>
+
+    <blockquote>
+      <p>仅关闭当前窗口而不是把所有窗口都关掉；
+  以qq为例，类似于win下的最小化；
+  可以关闭访达。</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>切换程序: <code class="language-plaintext highlighter-rouge">command + tab</code></p>
+
+    <blockquote>
+      <p>显示当前打开的所有程序，并进行切换，在两个程序间频繁切换时使用</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>关闭程序: <code class="language-plaintext highlighter-rouge">command + tab</code> 松开 <code class="language-plaintext highlighter-rouge">tab</code> 但是 <code class="language-plaintext highlighter-rouge">command</code> 不松并且按 <code class="language-plaintext highlighter-rouge">q</code></p>
+
+    <blockquote>
+      <p>不能关闭访达</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>切换窗口: <code class="language-plaintext highlighter-rouge">command + ~</code></p>
+  </li>
+</ul>
+
+<h2 id="三几个实用的快捷键">三、几个实用的快捷键</h2>
+
+<ul>
+  <li>
+    <p>强制退出: <code class="language-plaintext highlighter-rouge">command + option + esc</code></p>
+
+    <blockquote>
+      <p>程序卡死时可使用</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>向后删除: <code class="language-plaintext highlighter-rouge">fn + del</code></p>
+  </li>
+  <li>
+    <p>在新标签中打开（超链接）: <code class="language-plaintext highlighter-rouge">command + 鼠标左键</code></p>
+  </li>
+</ul>
+:ET
