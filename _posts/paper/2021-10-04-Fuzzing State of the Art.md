@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fuzzing: State of the Art 翻译
+title: Fuzzing： State of the Art 翻译
 categories: paper
 tags: fuzz
 ---
