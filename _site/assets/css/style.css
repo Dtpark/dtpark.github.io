@@ -101,7 +101,7 @@ pre { background: rgba(0, 0, 0, 0.9); border: 1px solid rgba(255, 255, 255, 0.15
 
 code.highlighter-rouge { background: rgba(0, 0, 0, 0.9); border: 1px solid rgba(255, 255, 255, 0.15); padding: 0px 3px; margin: 0px -3px; color: #aa759f; border-radius: 2px; }
 
-table { width: 100%; margin: 0 0 20px 0; }
+table { width: 100%; margin: 0 0 20px 0; word-break: break-all; }
 
 th { text-align: left; border-bottom: 1px dashed #b5e853; padding: 5px 10px; }
 
@@ -141,7 +141,7 @@ footer a { color: #fff; text-decoration: none; }
 footer { background: rgba(0, 0, 0, 0.1); width: 100%; height: auto; padding: 20px 0; margin: 0; }
 
 /* Font */
-p { word-wrap: break-word; }
+p, li { word-wrap: break-word; }
 
 .fc-conifer { color: #b5e853; }
 
