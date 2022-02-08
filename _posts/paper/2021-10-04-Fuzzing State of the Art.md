@@ -24,8 +24,6 @@ tags: fuzz
   - Software testing
   - Survey 
 
-
-
 ## 0x02 摘要
 
 模糊测试(fuzzing, short for fuzz testing)作为一种流行的软件测试技术，它能通过生成的大量输入发现程序的很多bug或漏洞。由于它的有效性，故其被视作一种有价值的bug发现方法。本文重点概述了fuzzing的一般过程及其类型，详细讨论了目前存在的关键问题及克服或减轻这些问题的先进技术。进一步将几个广泛使用的fuzzing工具进行分析、分类。本文的主要目标是让读者更好的了解fuzzing，及在软件测试和安全领域对fuzzing改进的潜在解决方案。最后还预测了fuzzing未来的一些方向。
