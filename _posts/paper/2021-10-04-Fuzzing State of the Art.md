@@ -2,7 +2,7 @@
 layout: post
 title: Fuzzing： State of the Art 翻译
 categories: paper
-tags: fuzz
+tags: fuzzing
 ---
 
 ## 0x01 简介
