@@ -15,6 +15,11 @@ type: page
 
 - [GDB Primer for CS1550 Project](https://people.cs.pitt.edu/~mosse/gdb-note.html)
 
+## 八股
+- [小林 x 图解计算机基础](https://xiaolincoding.com)
+- [CS-Notes](https://cyc2018.xyz/)
+- [代码随想录](https://programmercarl.com)
+
 ## 工具
 
 - [tiny png](https://tinypng.com/)
