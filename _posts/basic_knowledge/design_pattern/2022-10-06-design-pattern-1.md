@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 设计模式笔记（一）——设计模式概述
-categories: basic pattern
+categories: basic_knowledge
 tags: go design_pattern
 ---
 
@@ -82,3 +82,7 @@ tags: go design_pattern
 | **策略模式** | ★★★★☆ |准备一组算法，并将每一个算法封装起来，使得它们可以互换       |
 | 模板方法模式| ★★★☆☆ | 得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤 |
 | 访问者模式   | ★☆☆☆☆ |表示一个作用于某对象结构中的各元素的操作，它使你可以在不改变各元素的类的前提下定义作用于这些元素的新操作 |
+
+## 参考资料
+
+- https://www.yuque.com/aceld/lfhu8y/pebesh
