@@ -11,12 +11,12 @@ tags: tools
 
 笔者常用的markdown书写工具为**Typora**，图片上传工具为**picgo app**，近日将Typora升级后上传图片一直失败，错误信息如下：
 
-```
+```bash
 [PicGo ERROR]: Error: API v1 is deprecated, please refer to https://doc.sm.ms/ for v2 API documentation.
-
+```
 查阅文档：
 
-```
+```bash
 It is caused by PicGo’s support issue of its default image hosting service: sm.ms, please refer PicGo/PicGo-Core#30, or use other image service other than the default one
 ```
 
@@ -38,7 +38,7 @@ picgo-core: 1.4.19
 
 ## 三、配置步骤
 
-> 一下步骤大部分来源于官方手册:
+> 以下步骤大部分来源于官方手册:
 >
 > https://support.typora.io/Upload-Image/
 >
@@ -46,69 +46,68 @@ picgo-core: 1.4.19
 
 1. 安装picgo-core
 
-    ```bash
-    npm install picgo -g
-    # 或者
-    yarn global add picgo
+```bash
+npm install picgo -g
+# 或者
+yarn global add picgo
 ```
 
-2.  配置picgo配置文件（用于设置默认图床等）
+2. 配置picgo配置文件（用于设置默认图床等）
 
-    在命令行输入`picgo set uploader`，通过键盘方向键和回车选择图床。笔者选择的是smms
+在命令行输入`picgo set uploader`，通过键盘方向键和回车选择图床。笔者选择的是smms
 
-   ```bash
-    picgo set uploader
-   ? Choose a(n) uploader (Use arrow keys)
-   ❯ smms 
-     tcyun 
-     github 
-     qiniu 
-     imgur 
-     aliyun 
-     upyun 
-   ```
+```bash
+picgo set uploader
+? Choose a(n) uploader (Use arrow keys)
+❯ smms 
+tcyun 
+github 
+qiniu 
+imgur 
+aliyun 
+upyun 
+```
 
-    继续回车会要求输入相应图床的配置，如smms要求输入api token
-
+继续回车会要求输入相应图床的配置，如smms要求输入api token
+    
     ```bash
     picgo set uploader
     ? Choose a(n) uploader smms
     ? api token (此处为sm.ms图传登录后后台获取的token字符串) 
     ```
 
-    配置完成后会出现：
-
+配置完成后会出现：
+    
     ```bash
     [PicGo SUCCESS]: Configure config successfully!
     ```
 
-   配置成功。
+配置成功。
 
-3.  获取picgo-core 和 npm的位置，供后续使用
+3. 获取picgo-core 和 npm的位置，供后续使用
 
-    在命令行输入`which picgo`获得picgo路径
+在命令行输入`which picgo`获得picgo路径
 
-    ```bash
-     which picgo
-    /usr/local/bin/picgo
-    ```
+```bash
+which picgo
+/usr/local/bin/picgo
+```
 
-   在命令行输入 `which node`获取node路径
+在命令行输入 `which node`获取node路径
 
-    ```bash
-     which node          
-    /usr/local/bin/node
-    ```
+```bash
+which node          
+/usr/local/bin/node
+```
 
-4.  设置Typora
+4. 设置Typora
 
-    打开Typora-偏好设置…-图像，将上传服务改为`Custom Command`,命令改为`node 路径+空格+picgo路径+u`，测试上传成功
+打开Typora-偏好设置…-图像，将上传服务改为`Custom Command`,命令改为`node 路径+空格+picgo路径+u`，测试上传成功
 
-    ![image-20210508174243879](https://i.loli.net/2021/05/08/zIHPMh7dxs5aqDQ.png)
+![image-20210508174243879](https://i.loli.net/2021/05/08/zIHPMh7dxs5aqDQ.png)
 
-   > 【注意】
-   >
-   > 不加node的路径会报错
-   >
-   > 不加u也会报错
-
+> 【注意】
+>
+> 不加node的路径会报错
+>
+> 不加u也会报错
