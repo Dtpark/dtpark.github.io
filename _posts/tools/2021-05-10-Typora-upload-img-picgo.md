@@ -44,7 +44,7 @@ picgo-core: 1.4.19
 >
 > https://picgo.github.io/PicGo-Core-Doc/zh/guide/config.html
 
-1. 安装picgo-core
+- 安装picgo-core
 
 ```bash
 npm install picgo -g
@@ -52,7 +52,7 @@ npm install picgo -g
 yarn global add picgo
 ```
 
-2. 配置picgo配置文件（用于设置默认图床等）
+- 配置picgo配置文件（用于设置默认图床等）
 
 在命令行输入`picgo set uploader`，通过键盘方向键和回车选择图床。笔者选择的是smms
 
@@ -84,7 +84,7 @@ upyun
 
 配置成功。
 
-3. 获取picgo-core 和 npm的位置，供后续使用
+- 获取picgo-core 和 npm的位置，供后续使用
 
 在命令行输入`which picgo`获得picgo路径
 
@@ -100,7 +100,7 @@ which node
 /usr/local/bin/node
 ```
 
-4. 设置Typora
+- 设置Typora
 
 打开Typora-偏好设置…-图像，将上传服务改为`Custom Command`,命令改为`node 路径+空格+picgo路径+u`，测试上传成功
 
